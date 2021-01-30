@@ -1,6 +1,11 @@
 // complete the function
 function palindrom(str) {
   // code goes here
+  let regEx = /[^A-Za-z0-9]/g;
+  let lowerCase = str.toLowerCase().replace(regEx, '');
+  var reverse = lowerCase.split('').reverse().join(''); 
+  return reverse === lowerCase;
+
 }
 
 function solution(arg) {
